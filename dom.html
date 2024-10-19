@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  
+</head>
+<body>
+  <!-- <div class="container">
+    <h1 id="title">Welcome</h1>
+    <button id="clickMe">Clk</button>
+  </div>
+
+
+  <script>
+    const tit = document.getElementById("title");
+    const click = document.getElementById("clickMe");
+
+
+    click.addEventListener('click', function(){
+      tit.textContent = 'Hello World';
+      tit.style.color = "#b23424";
+      tit.style.fontSize = "23";
+    });
+  </script> -->
+
+  <form action="" id="myForm">
+    <input type="text" id="inputForm" placeholder="Enter your Message...">
+    <input type="submit" value="submit">
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+
+    form.addEventListener('submit', function(event){
+      event.preventDefault();
+      const nameIput = document.getElementById("inputForm").value;
+      if(nameIput===""){
+        alert("Please Enter Your Message...!!!")
+      }
+      else{
+        alert(`Hello ${nameIput}`);
+      }
+
+    })
+
+  </script>
+</body>
+</html>

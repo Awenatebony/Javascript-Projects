@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>To-Do List</h1>
+
+  <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Add a new task">
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ul id="todo-list"></ul>
+
+  <script>
+    const todoForm = document.getElementById("todo-form");
+    const todoInput = document.getElementById("todo-input");
+    const todoList = document.getElementById("todo-list");
+
+    todoForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const inputTask = todoInput.value;
+      if (inputTask === "") {
+        alert("Enter your List For Today...!!!!");
+        return;
+      }
+
+      // Create new list item
+      const newList = document.createElement("li");
+      newList.textContent = inputTask;
+
+      // Create delete button
+      const delbtn = document.createElement("button");
+      delbtn.textContent = 'Remove';
+      delbtn.classList.add("deleteButton");
+
+      // Append button to the list item
+      newList.appendChild(delbtn);
+
+      // Append the new list item to the todo list
+      todoList.appendChild(newList);
+
+      // Clear the input field
+      todoInput.value = "";
+
+      // Remove the list item when the delete button is clicked
+      delbtn.addEventListener('click', function() {
+        newList.remove();
+      });
+    });
+  </script>
+
+</body>
+</html>
