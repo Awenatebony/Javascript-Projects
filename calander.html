@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Calander</title>
+
+    <style>
+        body{
+            background-color: #000;
+            color: white;
+        }
+        .container{
+            border: 2px solid #333;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+
+        }
+
+        h2{|
+            position: relative;
+            left: 75%;
+            transform: translate(-50%, -50%);
+        }
+        table{
+            border: 2px solid #ccc;
+            border-collapse: collapse;
+            box-shadow: 
+                    0px 1 5px 8px rgb(7, 26, 26) inset,
+                    0px 7px 8px rgb(9, 18, 134) inset,
+                    0px 8px 8px rgb(141, 65, 15) inset;
+
+            
+        }
+
+        td,  th{
+            border:  2px solid #ccc;
+            padding: 7px;
+            cursor: pointer;
+           
+
+        }
+
+
+
+        td:hover{
+            background-color: rgb(180, 41, 6);
+            transition: 4s ease-in-out;
+            animation-name: table;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-direction: alternate;
+            animation-iteration-count:infinite;
+        }
+
+        td:active{
+            animation-play-state: paused;
+        }
+
+        @keyframes table {
+            0%{
+                transform: translate(0);
+                color: #fff;
+                font-size: 17px;
+            }
+            100%{
+                transform: translate(1px , -10px);
+                background-color: orange;
+                color: #fff;
+                border-radius: 50% ;
+                font-weight: bold;
+                font-size: 17px;
+                box-shadow: 
+                    2px 4px 8px rgb(7, 26, 26) inset,
+                    4px 7px 8px rgb(9, 18, 134) inset,
+                    5px 8px 8px rgb(141, 65, 15) inset;
+            }
+        }
+
+        .monthly-section{
+            position: relative;
+            left: 40%;
+        }
+
+        .active{
+            text-decoration: line-through;
+            color: gray;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <table>
+
+                <h2>JavaScript Calander</h2>
+                <tr>
+                    <th class="monthly-section">Monthly</th>
+                </tr>
+                
+
+                <tr>
+                    <th>Week 1</th>
+                    <td>Day 1</td>
+                    <td>Day 2</td>
+                    <td>Day 3</td>
+                    <td>Day 4</td>
+                    <td>Day 5</td>
+                    <td>Day 6</td>
+                    <td>Day 7</td>
+                </tr>
+
+                <tr>
+                    <th>Week 2</th>
+                    <td>Day 1</td>
+                    <td>Day 2</td>
+                    <td>Day 3</td>
+                    <td>Day 4</td>
+                    <td>Day 5</td>
+                    <td>Day 6</td>
+                    <td>Day 7</td>
+                </tr>
+
+                <tr>
+                    <th>Week 3</th>
+                    <td>Day 1</td>
+                    <td>Day 2</td>
+                    <td>Day 3</td>
+                    <td>Day 4</td>
+                    <td>Day 5</td>
+                    <td>Day 6</td>
+                    <td>Day 7</td>
+                </tr>
+
+                <tr>
+                    <th>Week 4</th>
+                    <td>Day 1</td>
+                    <td>Day 2</td>
+                    <td>Day 3</td>
+                    <td>Day 4</td>
+                    <td>Day 5</td>
+                    <td>Day 6</td>
+                    <td>Day 7</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="calander.js">
+    </script>
+</body>
+</html>
