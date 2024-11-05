@@ -1,0 +1,8 @@
+Customer Name    Account Balance    Phone Number    Email Address
+Francis Badasu   100                24444444        francis@example.com
+Joojo Ansah-Mensah   98.5           45785555        joojo@example.com
+Kwabena Ampofo   101.23             55789654        kwabena@example.com
+PK Anane         0.2                23456987        anane@example.com
+Kwesi Tsikata    0.9                265478952       tsikata@example.com
+Nancy Efe        0.78               31458555        efe@example.com
+Awen Bony        120.3              0535427136      awennaambonaventure@gmail.com
