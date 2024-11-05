@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+
+
+
+    <script>
+        // const Person = {
+        //     name: "bony awenate",
+        //     age : 34,
+        //     height: 5.6,
+        //     children: {
+        //         boys: 3,
+        //         girl: 1,
+        //         namesOfBoys: "awen, bony, akan",
+        //         Mother:{
+        //             name: "Mama",
+        //             aunty: "vivian",
+        //             age: {
+        //                 repectively: 34,
+        //                 another: 45,
+        //                 func : function (){
+        //                     console.log(`Hello May I know your Name: ${Person.name}`)
+        //                 }
+                        
+        //             }
+        //         }
+        //     }
+        // }
+
+        // object.key() is used to return all the keys / properties in an object !!!
+
+        // console.log(Object.keys(Person.children.Mother.age));
+
+        // object.values() is use to return all the keys / properties in an object !!!!
+
+        // console.log(Object.values(Person));
+
+        // Object.entries() is use to return a pair key-value !!!!!!!!!!!!
+
+        // console.log(Object.entries(Person));
+
+        //  the "in " in Objects are use to check where a property is in an object !!!!
+
+        // console.log("Mother" in Person.children)
+
+        // Method Or Functions Of Objects !!!
+
+        // console.log(Person.children.Mother.age.func());
+
+
+        // Nested Objects !!!!
+
+
+        // console.log(Person.name);
+        // console.log(Person.children.boys);
+        // console.log(Person.children.girl);
+        // console.log(Person.children.Mother.age.repectively);
+        // console.log(Person.children.namesOfBoys.length);
+        // console.log(Person.children.Mother.name)
+        
+
+        // console.log(Person.name);
+        // console.log(Person.age);
+        // console.log(Person.height);
+
+    //    let dev = Person.job = "Developer";
+    //    console.log(dev);
+    //    console.log(Person);
+
+    //    delete Person.job;
+    //    console.log(Person)
+
+
+    //  Challenges IN Objects !!!!!!!!
+    
+    // Create an Object with Properties (An Author)
+
+    const Book = {
+        title: "JavaScript Objects" ,
+        author: "John Doe",
+        year : 1975,
+        publisher: "Auhor Anchor",
+        getSammary: function(){
+            console.log(`The Title of this Book is ${Book.title}, and the author ${Book.author}.`);
+        }
+    }
+
+    console.log(Book.getSammary());
+    // console.log("genre" in Book);
+
+    // Book.year = 2002;
+
+    // Book.genre = "Who This BooK is For ..";
+    // console.log(Book);
+    // console.log(Book.genre);
+
+
+    // console.log(Book.title);
+    // console.log(Book.author);
+    </script>
+</body>
+</html>

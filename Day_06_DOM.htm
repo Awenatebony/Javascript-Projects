@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+
+        }
+        
+
+        .wrapper{
+            display: flex;
+            position: relative;
+            background-color: rgba(23, 39, 35, 0.5);
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo a{
+            color: #db490e;
+            
+        }
+        .logo{
+            background-color: #fff;
+        }
+
+        .nav-links ul{
+            display: flex;
+            justify-content: center;
+            background-color: red;
+
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            border: 2px solid blue;
+            padding: 5px;
+        }
+
+        .nav-links ul li a{
+            color: #fff;
+            padding: 5px;
+        }
+
+        @media (max-width:500px){
+            .wrapper{
+            display: flex;
+            background-color: #db490e;
+            justify-content: space-around;
+            align-items: center;
+
+            }
+
+            .nav-links ul{
+                display: none;
+                
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="wrapper" id="wrapper">
+            <div class="logo">
+                <h2><a href="#">Berbin</a></h2>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Appointment</a></li>
+                </ul>
+            </div>
+            <div class="input-links">
+                <button class="logIn-btn" id="Login">change Color</button>
+                <button class="signUp-btn">Sign Up</button>
+            </div>
+        </div>
+
+
+    </header>
+    
+
+    <script src="Dom.js"> </script>
+</body>
+</html>
